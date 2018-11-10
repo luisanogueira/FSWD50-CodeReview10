@@ -1,0 +1,22 @@
+#all {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.hero-image {
+	height: 250px;
+	overflow: hidden;
+}
+
+.hero-image img {
+	width: 100%;
+}
+
+#insertForm {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	top: 60px;
+	width: 70%;
+	border: 2px solid black;
+	background-color: white;
+}
