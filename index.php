@@ -51,7 +51,7 @@
                   echo "<table class='table table-striped col-12 mt-3'><thead class='thead-dark'><tr><th>Media ID</th><th>Title</th><th>ISBN</th><th>Description</th><th>Publish Date</th><th>Type</th><th>Status</th><th>Author name</th><th>Author surname</th><th>Publisher</th><th></th><th></th></tr></thead>";
                   // output data of each row
                   while($row = $result->fetch_assoc()) {
-                      echo "<tr><td>".$row["ID"]."</td><td>".$row["title"]."</td><td>".$row["ISBN"]."</td><td>".$row["description"]."</td><td>".$row["publish_date"]."</td><td>".$row["type"]."</td><td>".$row["status"]."</td><td>".$row["name"]."</td><td>".$row["surname"]."</td><td>".$row["publisher_name"]."</td><td><button type='button' class='btn btn-info p-2 text-center'>Update</button></td><td><button type='button' class='btn btn-info p-2 text-center'>Delete</button></td></tr>";
+                      echo "<tr><td>".$row["ID"]."</td><td>".$row["title"]."</td><td>".$row["ISBN"]."</td><td>".$row["description"]."</td><td>".$row["publish_date"]."</td><td>".$row["type"]."</td><td>".$row["status"]."</td><td>".$row["name"]."</td><td>".$row["surname"]."</td><td>".$row["publisher_name"]."</td><td><button type='button' class='btn btn-info p-2 text-center'><a href='update.php?mediaId={$row['ID']}'>Update</a></button></td><td><button type='button' class='btn btn-info p-2 text-center'><a href='delete.php?mediaId={$row['ID']}'>Delete</a></button></td></tr>";
 
                   }
                   echo "</table>";
